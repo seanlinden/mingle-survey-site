@@ -7,38 +7,50 @@ body {
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+/* FIXED NAVBAR */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
-  z-index: 10;
+  z-index: 100;
   padding: 0.8rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;              /* ➜ allows wrapping when needed */
+  row-gap: 0.5rem;              /* ➜ space between wrapped rows */
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
+
 nav .logo {
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 1px;
   color: #b8c6ff;
+  white-space: nowrap;
 }
+
+nav .right-links {
+  display: flex;
+  flex-wrap: wrap;              /* ➜ links won't clip */
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
 nav a {
   color: #eaeaea;
-  margin-left: 1.2rem;
   text-decoration: none;
   font-size: 1rem;
+  padding: 0.3rem 0.4rem;
+  transition: 0.2s;
+  white-space: nowrap;          /* ➜ cleaner wraps */
 }
+
 nav a:hover {
   color: #8bb0ff;
-}
-nav a.nav-link.active {
-  color: #8bb0ff;
-  font-weight: 700;
-  text-decoration: underline;
+  text-shadow: 0 0 6px #1a3a80;
 }
 
 /* HERO BACKGROUND */
