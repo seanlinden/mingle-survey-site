@@ -25,6 +25,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;              /* ➜ allows wrapping when needed */
+      row-gap: 0.5rem;              /* ➜ space between wrapped rows */
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
@@ -36,10 +38,11 @@
       white-space: nowrap;
     }
 
-    nav div.right-links {
+    nav .right-links {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap;              /* ➜ links won't clip */
       gap: 1rem;
+      justify-content: flex-end;
     }
 
     nav a {
@@ -48,13 +51,14 @@
       font-size: 1rem;
       padding: 0.3rem 0.4rem;
       transition: 0.2s;
+      white-space: nowrap;          /* ➜ cleaner wraps */
     }
 
     nav a:hover {
       color: #8bb0ff;
       text-shadow: 0 0 6px #1a3a80;
     }
-
+    
     /* ENSURE SECTIONS DON'T HIDE UNDER NAVBAR */
     section {
       scroll-margin-top: 90px;
