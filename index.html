@@ -38,8 +38,10 @@
       white-space: nowrap;
     }
 
+    nav div.right-links {
     nav .right-links {
       display: flex;
+      flex-wrap: wrap;
       flex-wrap: wrap;              /* ➜ links won't clip */
       gap: 1rem;
       justify-content: flex-end;
@@ -58,6 +60,7 @@
       color: #8bb0ff;
       text-shadow: 0 0 6px #1a3a80;
     }
+
     
     /* ENSURE SECTIONS DON'T HIDE UNDER NAVBAR */
     section {
@@ -168,25 +171,12 @@
 <body>
 
   <!-- NAVBAR -->
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary justify-content-center align-items-start">
-    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- notice position-absolute on the brand which allows it to center-->
-    <span class="navbar-brand position-absolute mx-0">MINGLE</span>
-    <div class="navbar-collapse collapse" id="navbar">
-        <ul class="navbar-nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Abstract</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Publications</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+  <nav>
+    <div class="logo">MINGLE</div>
+    <div class="right-links">
+      <a href="#abstract">Abstract</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
@@ -209,17 +199,16 @@
   <section id="publications">
     <h2>Highlighted Publications</h2>
     <div class="cards">
-      <div class="card"><strong>Survey Overview</strong><br/>Presentation of the data products, strategy, and scope of the MINGLE project.</div>
-      <div class="card"><strong>Stellar Birth Clouds</strong><br/>Early analysis of molecular cloud structure during merger-driven starbursts.</div>
-      <div class="card"><strong>The Formation of Stars</strong><br/>Measuring the variation in star formation efficiency (SFE) in LIRGs.</div>
-      <div class="card"><strong>Starburst Feedback</strong><br/>Connecting turbulence, feedback, and star formation efficiency.</div>
+      <div class="card"><strong>Survey Overview</strong><br/>Overview of the goals, strategy, and scope of the MINGLE project.</div>
+      <div class="card"><strong>Starburst Environments</strong><br/>Early analysis of molecular cloud structure during merger-driven starbursts.</div>
+      <div class="card"><strong>Feedback & Galaxy Evolution</strong><br/>Connecting turbulence, feedback, and star formation efficiency.</div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:seanlinden@arizona.edu">seanlinden@arizona.edu</a></p>
+    <p>Email: <a href="mailto:team@alma-mingle.com">team@alma-mingle.com</a></p>
   </section>
 
   <footer>© 2025 MINGLE Survey Collaboration — Hosted via GitHub Pages</footer>
