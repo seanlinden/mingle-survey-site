@@ -128,12 +128,12 @@ h2 {
   animation: fadeIn 1.5s ease;
 }
 
+/* FORCE CENTERING */
 .goals-logo {
   width: 260px;
   max-width: 40vw;
-  margin: 1.2rem auto;
-  display: block;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  margin: 1.5rem auto 1rem auto; /* auto = center horizontally */
+  display: block;                /* block ensures auto-centering works */
 }
 
 .goals-logo:hover {
