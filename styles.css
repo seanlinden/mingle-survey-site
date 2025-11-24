@@ -141,6 +141,24 @@ h2 {
   filter: drop-shadow(0 0 8px rgba(150, 180, 255, 0.45));
 }
 
+/* FIGURE SECTION */
+.figure-section {
+  text-align: center;
+  margin: 5rem auto 3rem auto;
+  max-width: 900px;
+  padding: 0 1.2rem;
+  animation: fadeIn 1.5s ease;
+}
+
+.top-figure {
+  width: 70%;               /* reduce size */
+  max-width: 500px;         /* hard cap */
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.45);
+}
+
 /* PUBLICATION CARDS */
 .cards {
   display: grid;
