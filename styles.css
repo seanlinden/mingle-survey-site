@@ -151,8 +151,8 @@ h2 {
 }
 
 .top-figure {
-  width: 70%;               /* reduce size */
-  max-width: 500px;         /* hard cap */
+  width: 80%;               /* reduce size */
+  max-width: 600px;         /* hard cap */
   margin: 1rem auto;
   display: block;
   border-radius: 8px;
